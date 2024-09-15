@@ -1,0 +1,98 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px; /* Base font size */
+  font-weight: 400;
+  line-height: 1.7;
+  background-color: #ecdfcc; /* Light background */
+  color: #697565; /* Primary text color */
+  text-decoration: none;
+}
+
+/* Root colors */
+:root {
+  --color-primary: #ecdfcc; /* Light background */
+  --color-secondary: #697565; /* Primary text color */
+  --color-accent: #3c3d37; /* Accent color */
+  --color-highlight: #181c14; /* Headings and important text */
+  --color-muted-highlight: rgba(
+    24,
+    28,
+    20,
+    0.7
+  ); /* Muted version of highlight */
+  --color-muted-accent: rgba(60, 61, 55, 0.7); /* Muted version of accent */
+  --color-muted-secondary: rgba(105, 117, 101, 0.7); /* Muted secondary */
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+  color: var(--color-highlight);
+  font-weight: 700;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p,
+li,
+a {
+  color: var(--color-secondary);
+  font-size: 1rem;
+  line-height: 1.8;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+/* Navigation Links */
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: var(--color-muted-accent);
+}
+
+/* Hover effects */
+a:hover,
+h1:hover,
+h2:hover,
+h3:hover {
+  color: var(--color-muted-accent);
+}
+
+li:hover {
+  color: var(--color-muted-secondary);
+}
+
+/* Muted text */
+.muted-text {
+  color: var(--color-muted-secondary);
+}
