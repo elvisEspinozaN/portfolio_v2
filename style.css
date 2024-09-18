@@ -96,3 +96,43 @@ li:hover {
 .muted-text {
   color: var(--color-muted-secondary);
 }
+
+.container {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    padding: 0 6rem;
+  }
+
+  .layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .header {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%; /* occupies 50% of screen */
+    max-height: 100vh; /* ensures header doesn't exceed the height of the viewport */
+    position: sticky; /* fixed when scrolling */
+  }
+
+  .main {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    padding: 5rem 3rem;
+  }
+}
