@@ -139,12 +139,29 @@ li:hover {
   .nav {
     display: block;
   }
+
+  .section {
+    scroll-margin-top: 6rem;
+    margin-bottom: 9rem;
+  }
+
+  .section p {
+    margin-bottom: 1rem;
+  }
 }
 
 /* for medium screens */
 @media (min-width: 768px) {
   .main-container {
     padding: 5rem 3rem;
+  }
+
+  .section {
+    margin-bottom: 6rem;
+  }
+
+  .experience-card {
+    gap: 1rem;
   }
 }
 
@@ -159,9 +176,22 @@ li:hover {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .experience-card {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .experience-card header {
+    grid-column: span 2 / span 2;
+  }
+
+  .experience-content {
+    grid-column: span 6 / span 6;
+  }
 }
 
-/* hero section */
+/* hero */
 .hero h1 {
   letter-spacing: -0.025em;
   font-weight: 700;
@@ -186,14 +216,14 @@ li:hover {
   list-style: none;
 }
 
-.nav ul li a {
+.nav a {
   display: flex;
   align-items: center;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
-.nav ul li a span {
+.nav span {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 700;
@@ -215,4 +245,88 @@ li:hover {
   flex-shrink: 1;
   margin-right: 2.25rem;
   list-style: none;
+}
+
+/* main */
+.main {
+  padding-top: 6rem;
+}
+
+.section {
+  scroll-margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+}
+
+/* experience */
+.group li {
+  margin-bottom: 3rem;
+  list-style: none;
+}
+
+/* experience card */
+.experience-card {
+  display: grid;
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+
+.experience-card header {
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  z-index: 10;
+}
+
+/* experience content */
+.experience-content {
+  z-index: 10;
+}
+
+.experience-content h3 {
+  line-height: 1.375;
+  font-weight: 500;
+}
+
+.experience-content p {
+  line-height: 1.5;
+  font-size: 0.875rem;
+  margin-top: 1.25rem;
+}
+
+/* experience technologies */
+.experience-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.experience-content li {
+  margin-top: 0.5rem;
+  margin-right: 0.375rem;
+}
+
+.experience-content div {
+  display: flex;
+  line-height: 1.25rem;
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  background-color: var(--color-muted-secondary);
+  border-radius: 9999px;
+  align-items: center;
+}
+
+.experience-content li {
+  color: var(--color-primary);
 }
