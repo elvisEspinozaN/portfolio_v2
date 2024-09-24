@@ -163,6 +163,10 @@ li:hover {
   .experience-card {
     gap: 1rem;
   }
+
+  .projects-card {
+    gap: 1rem;
+  }
 }
 
 /* for small/medium screens */
@@ -189,6 +193,25 @@ li:hover {
   .experience-content {
     grid-column: span 6 / span 6;
   }
+
+  .projects-card {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .projects-content {
+    grid-column: span 6 / span 6;
+    order: 2;
+    z-index: 10;
+  }
+
+  .projects-card > img {
+    grid-column: span 2 / span 2;
+  }
+}
+
+section > h2 {
+  margin-bottom: 30px;
 }
 
 /* hero */
@@ -261,7 +284,7 @@ li:hover {
   margin-bottom: 1rem;
 }
 
-/* experience */
+/* sections */
 .group li {
   margin-bottom: 3rem;
   list-style: none;
@@ -329,4 +352,32 @@ li:hover {
 
 .experience-content li {
   color: var(--color-primary);
+}
+
+.projects-card {
+  display: grid;
+  padding-bottom: 0.25rem;
+  gap: 1rem;
+  position: relative;
+}
+
+.projects-content > a {
+  display: inline-flex;
+  line-height: 1.25;
+  font-weight: 500;
+  font-size: 1rem;
+  align-items: baseline;
+}
+
+.projects-content > p {
+  line-height: 1.5;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.projects-card > img {
+  border-width: 2px;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
 }
