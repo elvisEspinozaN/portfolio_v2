@@ -7,19 +7,32 @@
       name="description"
       content="Elvis Espinoza, Software Engineer specializing in full-stack development, building efficient and scalable applications."
     />
-
-    <link rel="stylesheet" href="style.css" />
+    <meta property="og:title" content="Elvis Espinoza Portfolio" />
+    <meta
+      property="og:description"
+      content="Full-stack web applications built by Elvis Espinoza."
+    />
+    <meta property="og:image" content="./images/TBD.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <link
+      rel="stylesheet"
+      href="style.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <script src="./script.js" defer></script>
     <title>Elvis Espinoza</title>
   </head>
   <body>
     <div class="container">
       <div class="main-container">
-        <!-- Main layout -->
+        <!-- Main layout (left / right) -->
         <div class="layout">
           <!-- Left side -->
           <header class="header">
             <div class="hero">
-              <h1><a href="#">Elvis Espinoza</a></h1>
+              <h1>Elvis Espinoza</h1>
               <h2>Software Engineer</h2>
               <p>
                 Building efficient and scalable full-stack web applications.
@@ -42,30 +55,30 @@
             <ul class="social-media" aria-label="social media">
               <li class="social-icon">
                 <a
-                  href="#"
+                  href="https://github.com/elvisEspinozaN"
                   target="_blank"
                   rel="noreferrer noopener"
-                  aria-label="Github (opens in a new tab)"
+                  aria-label="Visit Github profile"
                   title="Github"
                   ><span>Github</span></a
                 >
               </li>
               <li class="social-icon">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/elvis-espinoza/"
                   target="_blank"
                   rel="noreferrer noopener"
-                  aria-label="LinkedIn (opens in a new tab)"
+                  aria-label="Visit LinkedIn page"
                   title="LinkedIn"
                   ><span>LinkedIn</span></a
                 >
               </li>
               <li class="social-icon">
                 <a
-                  href="#"
+                  href="mailto:elvis.espinoza.navarrete@outlook.com"
                   target="_blank"
                   rel="noreferrer noopener"
-                  aria-label="Email (opens email)"
+                  aria-label="Sens email to Elvis Espinoza"
                   title="Email"
                   ><span>Email</span></a
                 >
@@ -174,7 +187,16 @@
                     </div>
                   </li>
                 </ol>
-                <a href="#"><span>View Resume</span></a>
+                <div class="resume">
+                  <a
+                    href="https://www.linkedin.com/in/elvis-espinoza"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="Visit LinkedIn page"
+                    title="LinkedIn"
+                    ><span>View Resume</span></a
+                  >
+                </div>
                 <!-- Resume link -->
               </div>
             </section>
@@ -198,10 +220,11 @@
                         </p>
                       </div>
                       <img
-                        src="./images/TBD.jpg"
-                        alt="To be displayed image"
-                        width="100"
+                        src="./images/TBD-v2.jpg"
+                        alt="Placeholder for future projects"
+                        width="250"
                         height="48"
+                        loading="lazy"
                       />
                     </div>
                   </li>
